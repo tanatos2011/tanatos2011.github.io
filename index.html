@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="es" data-type="service" data-radius="soft" data-buttons="tonal" data-motion
+  data-en-title="Tánatos Webs: Google Maps listings and bilingual websites in Tampa"
+  data-en-description="I set up your Google Maps listing for $199 and build a one-page website in English and Spanish for $499. Free check-up, all done remotely.">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-tLacyvDXM7iOBdrKicHZHGDOpIjXw5dTwO25l/lTFaI=' 'sha256-1bYHHe3SE5ji7T/2HhIPPaOd3hoICy83QpaTDL+iRYk=' 'sha256-8a3beOkQ8lhvqi3y3T9+V8+SjuLz1acvRuTfpDSVEuk=' 'sha256-Z37+42tid8S7d/f2c6l/gIwV8E2GF81mx57vP5BQfGU='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; media-src 'self'; form-action https://wa.me mailto:; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'self'">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tánatos Webs: fichas de Google Maps y webs bilingües en Tampa</title>
+<meta name="description" content="Pongo bien tu ficha de Google Maps por $199 y te hago una web de una página en español e inglés por $499. Diagnóstico gratis y todo a distancia.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tánatos Webs: fichas de Google Maps y webs bilingües en Tampa">
+<meta property="og:site_name" content="Tánatos Webs">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:description" content="Ficha de Google bien puesta y web bilingüe de una página, a distancia. Diagnóstico gratis.">
+<meta property="og:image" content="https://tanatos2011.github.io/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://tanatos2011.github.io/">
+<meta property="og:url" content="https://tanatos2011.github.io/">
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<style>
+:root {
+  --p-bg: #ffffff; --p-surface: #f2f2f2; --p-ink: #0a0a0a; --p-muted: #6b6b6b;
+  --p-accent: #d92b21; --p-accent-ink: #ffffff; --p-action: #d92b21; --p-action-ink: #ffffff;
+  --p-inv-bg: #000000; --p-inv-surface: #010101; --p-inv-ink: #ffffff; --p-inv-muted: #868686;
+  --p-inv-accent: #d92b21; --p-inv-accent-ink: #ffffff; --p-inv-action: #d92b21; --p-inv-action-ink: #ffffff;
+  --font-display: "Schibsted Grotesk", system-ui, sans-serif;
+  --font-text: "Schibsted Grotesk", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.035em;
+  --display-tracking-xl: -0.042em;
+  --ly-scale: 0.98;
+}
+</style>
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/pinned-chapters/moment.js">
+<link rel="modulepreload" href="assets/moments/word-highlight/moment.js">
+<!-- page CSS: only inside the visuals (the listing mock, the two documents, the phone pair) and the language button -->
+<style>
+  .nowrap { white-space: nowrap; }
+  /* the tonal secondary: a darker grey fill and an edge at 3:1 on the white, so it reads as a button */
+  html[data-buttons="tonal"] .btn--secondary { background: color-mix(in oklab, var(--ink) 20%, var(--bg)); border-color: color-mix(in oklab, var(--ink) 46%, var(--bg)); }
+  html[data-buttons="tonal"] .btn--secondary:hover { background: color-mix(in oklab, var(--ink) 26%, var(--bg)); border-color: color-mix(in oklab, var(--ink) 52%, var(--bg)); }
+  #servicios .rows + .t-small { margin-top: var(--s-4); }
+
+  /* #mensual: one of the month's posts, waiting for the owner's OK */
+  #mensual .frame { --ratio: 80%; }
+  .post { width: min(100%, 360px); background: var(--bg); border: 1px solid var(--line); border-radius: var(--r-md); padding: var(--s-5); display: grid; gap: var(--s-3); }
+  .post .ficha__tag { margin: 0; }
+  .post__media { border-radius: var(--r-sm); overflow: hidden; }
+  .post__img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; }
+  .post__text { margin: 0; font-size: var(--t-small); line-height: 1.45; }
+
+  /* #servicios: the example listing, before and after, inside one frame */
+  #servicios .frame { --ratio: 92%; }
+  .ficha { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); width: 100%; align-content: center; }
+  .ficha__tag { grid-column: 1 / -1; margin: 0; display: flex; align-items: center; justify-content: space-between; gap: var(--s-2); font-size: var(--t-label); color: var(--muted); }
+  .ficha__tag img { width: 14px; height: 20px; }
+  .ficha__card { background: var(--bg); border: 1px solid var(--line); border-radius: var(--r-md); padding: var(--s-5); display: grid; gap: var(--s-3); align-content: start; }
+  .ficha__when { font-size: var(--t-label); font-weight: 500; color: var(--muted); }
+  .ficha__card--after .ficha__when { color: var(--accent); }
+  .ficha__name { font: var(--display-weight) 24px/1.1 var(--font-display); letter-spacing: var(--display-tracking); }
+  .ficha__kind { font-size: var(--t-small); color: var(--muted); margin-top: calc(var(--s-2) * -1); }
+  .ficha__photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; border-radius: var(--r-sm); overflow: hidden; }
+  .ficha__photos img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
+  .ficha__empty { aspect-ratio: 3 / 1; border-radius: var(--r-sm); background: var(--surface); display: grid; place-items: center; font-size: var(--t-label); color: var(--muted); }
+  .ficha__rows { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-2); font-size: var(--t-small); line-height: 1.4; }
+  .ficha__rows li { display: grid; grid-template-columns: 86px 1fr; gap: var(--s-2); }
+  .ficha__rows span:first-child { color: var(--muted); }
+  .ficha__rows .is-missing { color: var(--muted); }
+  .ficha__chips { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+  .ficha__chips span { font-size: var(--t-label); padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; }
+
+  /* #ejemplo: the website, desktop and phone */
+  #ejemplo .frame { --ratio: 66%; }
+  #ejemplo .frame__img { object-position: 50% 0; }
+  #ejemplo .phone { position: absolute; inset: var(--s-5) 0; margin: 0 auto; height: calc(100% - 2 * var(--s-5)); width: auto; aspect-ratio: 390 / 844; border-radius: 18px; border: 1px solid var(--line); display: block; }
+
+  /* #como: the two documents drawn as pages */
+  #como .mo-pc__visual--lit { background: var(--surface); }
+  .doc { width: min(100%, 420px); background: var(--bg); border: 1px solid var(--line); border-radius: var(--r-sm); padding: var(--s-5); display: grid; gap: var(--s-2); font-size: var(--t-small); line-height: 1.4; }
+  .doc__head { display: flex; justify-content: space-between; gap: var(--s-3); font-size: var(--t-label); color: var(--muted); }
+  .doc__title { font: var(--display-weight) 22px/1.15 var(--font-display); letter-spacing: var(--display-tracking); }
+  .doc ul, .doc ol { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+  .doc__line { display: flex; justify-content: space-between; gap: var(--s-3); border-top: 1px solid var(--line); padding-top: var(--s-2); }
+  .doc__sign { display: flex; gap: var(--s-5); color: var(--muted); font-size: var(--t-label); }
+  .doc__sign span { flex: 1; border-top: 1px solid var(--ink); padding-top: 4px; }
+
+  /* v3 · hero: "how a customer sees you". A phone plays one short story on load (search, tap Website, a security
+     warning, the fixed site) and rests on the fixed site; the two tabs replay either half. No loop. */
+  .hero--split .hero__media.demo { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--s-4); padding: var(--s-5); background: var(--surface); }
+  .demo__phone { position: relative; flex: 0 1 auto; height: min(600px, 100% - 60px); min-height: 0; aspect-ratio: 300 / 600; width: auto; max-width: 100%; border-radius: 40px; background: var(--ink); padding: 10px; }
+  .demo__screen { position: relative; width: 100%; height: 100%; border-radius: 31px; overflow: hidden; background: var(--bg); }
+  .demo__scene { position: absolute; inset: 0; display: flex; flex-direction: column; opacity: 0; visibility: hidden; transform: scale(.985); filter: blur(2px);
+    transition: opacity 280ms cubic-bezier(.23,1,.32,1), transform 280ms cubic-bezier(.23,1,.32,1), filter 280ms ease, visibility 0s linear 280ms; }
+  .demo[data-scene="1"] .demo__scene--1, .demo[data-scene="2"] .demo__scene--2, .demo[data-scene="3"] .demo__scene--3 { opacity: 1; visibility: visible; transform: none; filter: none; transition-delay: 0s; }
+  .demo__bar { margin: 34px 14px 10px; height: 40px; border-radius: 999px; border: 1px solid var(--line); display: flex; align-items: center; gap: 8px; padding: 0 14px; font-size: 13px; color: var(--ink); }
+  .demo__bar svg { width: 14px; height: 14px; flex: none; }
+  .demo__map { flex: 1; background:
+      linear-gradient(90deg, transparent 47%, #e4e4e4 47% 53%, transparent 53%) 0 0 / 100% 100%,
+      linear-gradient(0deg, transparent 58%, #e4e4e4 58% 63%, transparent 63%) 0 0 / 100% 100%,
+      linear-gradient(35deg, transparent 30%, #ececec 30% 34%, transparent 34%) 0 0 / 100% 100%, #f6f6f4; position: relative; }
+  .demo__pin { position: absolute; left: 50%; top: 42%; width: 18px; height: 18px; margin: -18px 0 0 -9px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--accent); }
+  .demo__card { margin: -18px 10px 12px; position: relative; background: var(--bg); border: 1px solid var(--line); border-radius: 16px; padding: 14px; display: grid; gap: 4px; }
+  .demo__name { font: 500 17px/1.2 var(--font-display); }
+  .demo__kind { font-size: 12px; color: var(--muted); }
+  .demo__acts { display: flex; gap: 6px; margin-top: 8px; }
+  .demo__acts > span { flex: 1; min-width: 0; text-align: center; font-size: 11px; padding: 7px 6px; border-radius: 999px; border: 1px solid var(--line); white-space: nowrap; }
+  .demo__acts .is-web { position: relative; }
+  .demo__tap { position: absolute; left: 50%; top: 50%; width: 34px; height: 34px; margin: -17px; border-radius: 50%; background: color-mix(in oklab, var(--accent) 35%, transparent); opacity: 0; transform: scale(.4); }
+  .demo.is-tapping .demo__tap { animation: demo-tap .6s ease-out both; }
+  @keyframes demo-tap { 0% { opacity: 0; transform: scale(.4); } 30% { opacity: 1; } 100% { opacity: 0; transform: scale(1.4); } }
+  .demo__scene--2 { background: #fff; padding: 64px 22px 22px; gap: 12px; color: #1f1f1f; }
+  .demo__warn-icon { width: 44px; height: 44px; border-radius: 50%; background: #d93025; display: grid; place-items: center; color: #fff; font: 700 24px/1 var(--font-text); }
+  .demo__warn-title { font: 500 20px/1.2 var(--font-text); }
+  .demo__warn-text { font-size: 12.5px; line-height: 1.45; color: #5f6368; }
+  .demo__warn-url { font-size: 12px; color: #5f6368; border-top: 1px solid #e3e3e3; padding-top: 10px; margin-top: auto; }
+  .demo__scene--3 img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; display: block; }
+  .demo__tabs { flex: none; display: flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--bg); border: 1px solid var(--line); }
+  .demo__tabs button { height: 36px; min-width: 96px; padding: 0 var(--s-4); border: 0; border-radius: 999px; background: none; color: var(--ink); font: 500 var(--t-small)/1 var(--font-text); cursor: pointer; }
+  .demo__tabs button { transition: background-color 160ms ease, color 160ms ease, transform 160ms cubic-bezier(.23,1,.32,1); }
+  .demo__tabs button:active { transform: scale(.97); }
+  @media (hover: hover) and (pointer: fine) { .demo__tabs button[aria-pressed="false"]:hover { background: var(--surface); } }
+  .demo__tabs button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+  .demo__tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* v3 · photos zoom a little inside their frame under the pointer; the map pin pulses twice when the story starts */
+  @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    .post__img, .mo-pc__visual > img, .ficha__photos img { transition: transform 450ms cubic-bezier(.23,1,.32,1); }
+    .post:hover .post__img, .mo-pc__visual:hover > img, .ficha__photos:hover img { transform: scale(1.03); }
+  }
+  .demo__pin::after { content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 2px solid var(--accent); opacity: 0; }
+  .demo[data-scene="1"] .demo__pin::after { animation: pin-pulse 1.1s cubic-bezier(.23,1,.32,1) .5s 2 both; }
+  @keyframes pin-pulse { 0% { opacity: .9; transform: scale(.6); } 100% { opacity: 0; transform: scale(1.8); } }
+  @media (prefers-reduced-motion: reduce) { .demo__pin::after { animation: none; } }
+  @media (prefers-reduced-motion: reduce) { .demo__scene { transition: opacity 200ms ease, visibility 0s linear 200ms; transform: none; filter: none; } .demo.is-tapping .demo__tap { animation: none; } .ba__knob, .demo__tabs button { transition: none; } }
+
+  /* v3 · #no: the statement sits in the middle of its screen, not on its top edge */
+  #no.statement { display: flex; flex-direction: column; justify-content: center; }
+  #no.statement > .wrap { flex: 0 0 auto; height: auto; min-height: 0; justify-content: center; }
+
+  /* v3 · hero facts under the buttons */
+  .hero-facts--v3 { margin-top: var(--s-8); }
+  .hero-facts--v3 dd { margin: 2px 0 0; font-weight: 500; }
+
+  /* v3 · #dato: the one number, set large */
+  #dato .dato { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--s-7); align-items: end; }
+  .dato__num { font: var(--display-weight) clamp(132px, 21vw, 320px)/.84 var(--font-display); letter-spacing: var(--display-tracking-xl); margin: 0; }
+  .dato__num em { font-style: normal; color: var(--accent); }
+  .dato__text { margin: 0; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.45; max-width: 34ch; }
+  .dato__src { margin: var(--s-4) 0 0; font-size: var(--t-small); color: var(--ink); max-width: 44ch; }
+  .dato__frame { grid-column: 1 / -1; --ratio: 0px; padding: var(--s-5); }
+  .dato__bar { display: block; width: 100%; height: clamp(72px, 10vw, 150px); }
+  .dato__bar path { fill: var(--accent); } .dato__bar path.is-web { fill: var(--line-strong); }
+
+  /* v3 · #servicios: the price calculator */
+  .calc { border: 0; margin: 0; padding: 0; display: grid; gap: 0; }
+  .calc legend { padding: 0; margin-bottom: var(--s-3); font-size: var(--t-small); color: var(--muted); }
+  .calc__opt { display: grid; grid-template-columns: minmax(0, 1fr) 22px; gap: var(--s-4); align-items: start; padding: 10px 0; border-top: 1px solid var(--line); cursor: pointer; }
+  .calc__opt:first-of-type { border-top: 0; padding-top: 0; }
+  .calc__opt input { grid-column: 2; grid-row: 1; width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--accent); }
+  .calc__body { grid-column: 1; grid-row: 1; }
+  .calc__head { display: flex; justify-content: space-between; gap: var(--s-4); }
+  .calc__name { font-weight: 500; }
+  .calc__opt p { margin: 2px 0 0; font-size: var(--t-small); line-height: 1.45; }
+  .calc__price { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .calc__plan { margin-top: var(--s-2); }
+  .calc__note { margin-top: var(--s-3); }
+  .calc__total { margin-top: var(--s-4); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--s-1) var(--s-4); font-variant-numeric: tabular-nums; }
+  .calc__total strong { font: var(--display-weight) 32px/1 var(--font-display); letter-spacing: var(--display-tracking); }
+  .calc__total .t-small { grid-column: 1 / -1; color: var(--ink); font-variant-numeric: normal; }
+
+  /* v3 · #ejemplo: before / after, one frame, a handle you drag (a range input underneath does the work) */
+  .ba { --ratio: 0px; position: relative; width: 100%; aspect-ratio: 1440 / 900; border-radius: var(--r-md); overflow: hidden; border: 1px solid var(--line); background: var(--bg); --pos: 32%; }
+  .ba > .ba__layer { position: absolute; inset: 0; max-width: none; }
+  .ba > :is(.ba__line, .ba__knob, .ba__tag, .ba__range) { position: absolute; }
+  .ba__layer--after { clip-path: inset(0 0 0 var(--pos)); }
+  .ba__layer--after img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; display: block; }
+  .ba__before { height: 100%; display: grid; grid-template-rows: auto 1fr auto; background: #fbfbfb; color: #3a3a3a; }
+  .ba__url { display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-bottom: 1px solid #e6e6e6; font-size: 12px; color: #777; }
+  .ba__url i { width: 8px; height: 8px; border-radius: 50%; background: #ddd; display: inline-block; }
+  .ba__soon { display: grid; align-content: center; justify-items: start; gap: 10px; padding: 24px 8%; max-width: 46%; }
+  .ba__soon b { font: 400 clamp(26px, 3.4vw, 46px)/1.05 Georgia, "Times New Roman", serif; color: #9a9a9a; }
+  .ba__soon span { font-size: 13px; color: #999; }
+  .ba__foot { padding: 10px 16px 10px 96px; font-size: 11px; color: #aaa; border-top: 1px solid #eee; }
+  .ba__line { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px; margin-left: -1px; background: var(--ink); pointer-events: none; }
+  .ba__knob { position: absolute; top: 50%; left: var(--pos); width: 44px; height: 44px; margin: -22px; border-radius: 50%; background: var(--ink); color: var(--bg); display: grid; place-items: center; pointer-events: none; }
+  .ba__knob svg { width: 20px; height: 20px; }
+  .ba__knob { transition: transform 160ms cubic-bezier(.23,1,.32,1); }
+  .ba:has(.ba__range:active) .ba__knob { transform: scale(.94); }
+  @media (hover: hover) and (pointer: fine) { .ba:hover .ba__knob { transform: scale(1.06); } .ba:has(.ba__range:active) .ba__knob { transform: scale(.94); } }
+  .ba__tag { position: absolute; bottom: var(--s-3); white-space: nowrap; padding: 6px 12px; border-radius: 999px; background: var(--ink); color: var(--bg); font-size: var(--t-label); font-weight: 500; pointer-events: none; }
+  .ba__tag--before { left: var(--s-3); } .ba__tag--after { right: var(--s-3); }
+  .ba__range { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; touch-action: pan-y; }
+  .ba:has(.ba__range:focus-visible) .ba__knob { outline: 2px solid var(--accent); outline-offset: 3px; }
+  #ejemplo .frame--phone { --ratio: 0px; padding: var(--s-5); }
+  #ejemplo .frame--phone .phone { position: static; height: auto; width: min(100%, 220px); margin: 0 auto; }
+
+  /* v3 · closing: the check-up request */
+  .ask { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--s-3); align-items: end; margin-top: var(--s-6); }
+  .ask .field { color: var(--ink); }
+  .ask { --error: #ff8a80; }
+  .ask .field__error { color: var(--error); }
+  .ask .field input[aria-invalid="true"] { border: 2px solid var(--error); }
+  .ask .field input { background: var(--bg); color: #0a0a0a; border-color: var(--line-strong); }
+  .ask .btn { white-space: nowrap; }
+  .ask__note { grid-column: 1 / -1; margin: 0; font-size: var(--t-small); color: var(--muted); }
+
+  @media (max-width: 1023px) {
+    #dato .dato { grid-template-columns: minmax(0, 1fr); gap: var(--s-5); }
+    .ask { grid-template-columns: minmax(0, 1fr); }
+    .ask .btn { width: 100%; }
+  }
+  @media (max-width: 639px) {
+    .hero--split .hero__media.demo { padding: var(--s-3); min-height: 320px; gap: var(--s-2); }
+    .demo__phone { height: min(300px, 100% - 56px); border-radius: 30px; padding: 7px; }
+    .demo__screen { border-radius: 24px; }
+    .ba__soon { max-width: 50%; padding: 16px; }
+    .demo__tabs button { min-width: 0; height: 44px; }
+    .ba { aspect-ratio: 1 / 1; }
+    .dato__bar { height: 150px; }
+    .ba__tag { display: none; }
+    .ba__soon span, .ba__foot { display: none; }
+    .ba__url { padding: 6px 10px; font-size: 10px; }
+    .ba__soon b { font-size: 20px; }
+    .ba__tag { font-size: 12px; padding: 4px 10px; bottom: var(--s-2); }
+  }
+
+  @media (max-width: 1279px) {
+    .ficha__card { padding: var(--s-4); }
+    .ficha__rows li { grid-template-columns: 1fr; gap: 0; }
+  }
+  /* tablet (640 to 1023): every section fills its screens, so the gaps between them stay even.
+     #servicios: two screens in two groups (the prices, then the listing), each sized to its screen;
+     #ejemplo and #mensual: their two columns, the frames as tall as the screen leaves;
+     #como: the steps stacked, each picture under its words, sized so the four fill two screens */
+  @media (min-width: 640px) and (max-width: 1023px) {
+    #servicios { --h: 2 !important; }
+    #servicios > .wrap.grid { grid-template-rows: auto minmax(0, 1fr) !important; }
+    #servicios .frame { align-self: stretch !important; }
+    .dato__num { font-size: 30vw; }
+    .dato__text { font-size: 24px; }
+    .dato__bar { height: 300px; }
+    .dato__frame { padding: var(--s-6); }
+    #servicios > .wrap { grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); row-gap: calc(var(--padt) + var(--padb) + var(--bar)); }
+    #servicios > .wrap > * { align-self: start; min-height: 0; }
+    #servicios .rows > li { padding-block: calc(var(--s-4) + (100svh - 860px) / 8); }
+    #servicios .rows > li:first-child { padding-top: 0; }
+    #servicios .frame { --ratio: 0px; padding: var(--s-4); }
+    .ficha { grid-template-columns: 1fr; gap: var(--s-3); }
+    .ficha__card--before .ficha__empty, .ficha__card--before .ficha__rows li:nth-child(n+3) { display: none; }
+    .ficha__photos { grid-template-columns: 1fr; }
+    .ficha__photos img { aspect-ratio: auto; height: calc(100svh - 851px); }
+    .ficha__photos img:nth-child(n+2) { display: none; }
+    #ejemplo .frame:not(.ba) { --ratio: 0px; height: calc(100svh - 397px); }
+    #ejemplo .frame--photo .frame__img { object-fit: contain; object-position: 50% 50%; padding: var(--s-4); }
+    #ejemplo .phone { inset: var(--s-6) 0; height: calc(100% - 2 * var(--s-6)); }
+    #ejemplo .grid > *, #mensual .grid > * { grid-column: span 6; }
+    #mensual .frame { --ratio: 0px; min-height: calc(100svh - 372px); }
+    main > #como[data-moment][data-moment]:not(.is-live) { min-height: calc(2 * 100svh); }
+    #como:not(.is-live) .mo-pc__step { grid-template-columns: minmax(0, 1fr); }
+    #como:not(.is-live) .mo-pc__step .mo-pc__visual { grid-column: 1; grid-row: auto; margin-top: var(--s-3); }
+    #como:not(.is-live) .mo-pc__visual > img, #como:not(.is-live) .mo-pc__visual--lit { aspect-ratio: auto; height: calc(50svh - 230px); max-height: none; width: 100%; }
+    #como:not(.is-live) .mo-pc__visual--lit { padding: var(--s-4); }
+    .closing__cta.close--type > .btn--xl { width: auto; align-self: start; height: var(--btn-h); font: 500 16px/1 var(--font-text); letter-spacing: 0; }
+  }
+  @media (max-width: 639px) {
+    .ficha { grid-template-columns: 1fr; gap: var(--s-2); }
+    .ficha__card { gap: var(--s-2); }
+    .ficha__card--before .ficha__empty, .ficha__card--before .ficha__rows li:nth-child(n+3) { display: none; }
+    .doc { padding: var(--s-4); gap: var(--s-2); }
+    .doc .doc__hide-sm { display: none; }
+    #ejemplo .frame:not(.frame--photo) { --ratio: 110%; }
+    #servicios .frame { --ratio: 0px; padding: 0; background: none; border: 0; }
+    .ficha__photos { grid-template-columns: 1fr; }
+    .ficha__photos img { aspect-ratio: 5 / 2; }
+    .ficha__photos img:nth-child(n+2) { display: none; }
+    #mensual .frame { --ratio: 0px; }
+    .post__img { aspect-ratio: 1 / 2; }
+    main > #como[data-moment][data-moment]:not(.is-live) { min-height: calc(2 * 100lvh); }
+    /* v3 (decided with Hades after his phone video): on a phone each section is as tall as what it holds, so no
+       blank screen-fills above the headings; the sections keep their own top and bottom padding */
+    main > :is(section, .section):not(.hero, .section--hero),
+    main > #como[data-moment][data-moment]:not(.is-live) { min-height: 0 !important; }
+  }
+</style>
+</head>
+<body>
+<!-- plan: kind service · deal: hero split, palette white-signal-red, type schibsted (Schibsted Grotesk; zilla, the first pairing, failed hero-lines: the h1 took 4 lines), nav-centre
+     (dealt nav-mega, dealt again: one person with four sections, no product lines), footer-dark (dealt footer-visit,
+     dealt again: no door, he works remotely), close-type, rhythm space, buttons tonal, mark dots, radius soft,
+     moments pinned-chapters (#como) and word-highlight (#no). Flat grounds, no effect. -->
+<header class="nav nav--centre">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top" data-en="Skip to content">Saltar al contenido</a>
+    <a class="nav__logo" href="#top"><span class="mark" data-mark="dots" aria-hidden="true"></span><span translate="no">Tánatos Webs</span></a>
+    <nav class="nav__links" aria-label="Principal" data-en-aria="Main">
+      <div class="nav__item"><a class="nav__link" href="#servicios" data-en="Services">Servicios</a></div>
+      <div class="nav__item"><a class="nav__link" href="#ejemplo" data-en="Examples">Ejemplos</a></div>
+      <div class="nav__item"><a class="nav__link" href="#como" data-en="Process">Proceso</a></div>
+      <div class="nav__item"><a class="nav__link" href="#mensual" data-en="Maintenance">Mantenimiento</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__link" href="?lang=en" hreflang="en" lang="en" data-lang-toggle>English</a>
+      <a class="btn btn--primary" href="https://wa.me/18136830387?text=Hola%20Jaime%2C%20quiero%20el%20diagn%C3%B3stico%20gratis%20de%20mi%20negocio." data-en-href="https://wa.me/18136830387?text=Hi%20Jaime%2C%20I%27d%20like%20the%20free%20check-up%20for%20my%20business." data-en="Get a free check-up">Pedir diagnóstico gratis</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menú" data-en-aria="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero hero--split" data-enter aria-labelledby="hero-h">
+    <div class="wrap"><div class="hero-text grid hero__grid">
+      <div class="hero__text span-5">
+        <h1 id="hero-h" data-en="Google Maps and websites in Tampa">Google Maps y webs en Tampa</h1>
+        <p class="hero__lead" data-en="I set up your business on Google Maps properly and build you a one-page website in English and Spanish. All remote, by WhatsApp or email, from $199.">Pongo bien la ficha de tu negocio en Google Maps y te hago una web de una página en español e inglés. Todo a distancia, por WhatsApp o correo, desde $199.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="https://wa.me/18136830387?text=Hola%20Jaime%2C%20quiero%20el%20diagn%C3%B3stico%20gratis%20de%20mi%20negocio." data-en-href="https://wa.me/18136830387?text=Hi%20Jaime%2C%20I%27d%20like%20the%20free%20check-up%20for%20my%20business." data-en="Get a free check-up">Pedir diagnóstico gratis</a>
+          <a class="btn btn--secondary" href="tel:+18136830387" data-en="Call (813) 683-0387">Llamar al (813) 683-0387</a>
+        </div>
+        <dl class="hero-facts hero-facts--v3">
+          <div><dt data-en="Check-up">Diagnóstico</dt><dd data-en="Free">Gratis</dd></div>
+          <div><dt data-en="Languages">Idiomas</dt><dd data-en="Spanish and English">Español e inglés</dd></div>
+          <div><dt data-en="Passwords">Contraseñas</dt><dd data-en="I never ask">Nunca te las pido</dd></div>
+        </dl>
+      </div>
+      <div class="hero__media demo frame span-6 start-7" data-scene="1" role="group" aria-label="Así te ve un cliente" data-en-aria="How a customer sees you">
+        <div class="demo__phone" role="img" aria-label="Un móvil: alguien busca un café en Google Maps, toca Sitio web y le sale un aviso de conexión no segura; después, la misma búsqueda lleva a una web arreglada" data-en-aria="A phone: someone searches for a cafe on Google Maps, taps Website and gets a not-secure warning; after, the same search opens a fixed website">
+          <div class="demo__screen">
+            <div class="demo__scene demo__scene--1">
+              <div class="demo__bar"><svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span data-en="cuban coffee near me">café cubano cerca</span></div>
+              <div class="demo__map"><span class="demo__pin"></span></div>
+              <div class="demo__card">
+                <span class="demo__name">Tres Coladas</span>
+                <span class="demo__kind" data-en="Cuban cafe · West Tampa">Cafetería cubana · West Tampa</span>
+                <div class="demo__acts"><span data-en="Call">Llamar</span><span data-en="Directions">Cómo llegar</span><span class="is-web"><span data-en="Website">Sitio web</span><i class="demo__tap"></i></span></div>
+              </div>
+            </div>
+            <div class="demo__scene demo__scene--2">
+              <span class="demo__warn-icon">!</span>
+              <span class="demo__warn-title" data-en="Your connection is not private">La conexión no es privada</span>
+              <span class="demo__warn-text" data-en="Someone may be trying to steal your information on this site. Go back.">Puede que alguien intente robar tu información en este sitio. Vuelve atrás.</span>
+              <span class="demo__warn-url">trescoladas.example</span>
+            </div>
+            <div class="demo__scene demo__scene--3">
+              <img src="assets/img/work-cafe-movil-1.jpg" srcset="assets/img/work-cafe-movil-1-200.jpg 200w, assets/img/work-cafe-movil-1.jpg 390w" sizes="280px" width="390" height="844" alt="" fetchpriority="high">
+            </div>
+          </div>
+        </div>
+        <div class="demo__tabs" role="group" aria-label="Ver la web" data-en-aria="See the website">
+          <button type="button" data-show="2" aria-pressed="false" data-en="Broken">Rota</button>
+          <button type="button" data-show="3" aria-pressed="true" data-en="Fixed">Arreglada</button>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="section" id="dato" style="--h: 1" aria-labelledby="dato-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="dato-h" data-en="Tampa businesses without a website">Negocios de Tampa sin web</h2>
+      </div>
+      <div class="dato">
+        <p class="dato__num" aria-hidden="true">6<em>/</em>10</p>
+        <div>
+          <p class="dato__text" data-en="Six out of ten have no website on Google Maps. A customer who finds them only sees a pin and a phone number.">Seis de cada diez no tienen web en Google Maps. El cliente que los encuentra solo ve un punto en el mapa y un teléfono.</p>
+          <p class="dato__src" data-en="I checked 150 businesses in west Tampa on November 25, 2026: 58 barbershops and 92 auto repair shops. 90 had no link to a website.">Revisé 150 negocios del oeste de Tampa el 25 de noviembre de 2026: 58 barberías y 92 talleres. 90 no tenían enlace a una web.</p>
+        </div>
+        <div class="frame dato__frame"><svg class="dato__bar" viewBox="0 0 588 56" preserveAspectRatio="xMidYMid meet" role="img" aria-label="6 de cada 10 sin web" data-en-aria="6 out of 10 without a website"><path transform="translate(0 0)" d="M24 2C13.5 2 5 10.3 5 20.6 5 34.5 24 54 24 54s19-19.5 19-33.4C43 10.3 34.5 2 24 2zm0 26a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"/><path transform="translate(60 0)" d="M24 2C13.5 2 5 10.3 5 20.6 5 34.5 24 54 24 54s19-19.5 19-33.4C43 10.3 34.5 2 24 2zm0 26a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"/><path transform="translate(120 0)" d="M24 2C13.5 2 5 10.3 5 20.6 5 34.5 24 54 24 54s19-19.5 19-33.4C43 10.3 34.5 2 24 2zm0 26a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"/><path transform="translate(180 0)" d="M24 2C13.5 2 5 10.3 5 20.6 5 34.5 24 54 24 54s19-19.5 19-33.4C43 10.3 34.5 2 24 2zm0 26a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"/><path transform="translate(240 0)" d="M24 2C13.5 2 5 10.3 5 20.6 5 34.5 24 54 24 54s19-19.5 19-33.4C43 10.3 34.5 2 24 2zm0 26a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"/><path transform="translate(300 0)" d="M24 2C13.5 2 5 10.3 5 20.6 5 34.5 24 54 24 54s19-19.5 19-33.4C43 10.3 34.5 2 24 2zm0 26a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"/><path transform="translate(360 0)" d="M24 2C13.5 2 5 10.3 5 20.6 5 34.5 24 54 24 54s19-19.5 19-33.4C43 10.3 34.5 2 24 2zm0 26a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" class="is-web"/><path transform="translate(420 0)" d="M24 2C13.5 2 5 10.3 5 20.6 5 34.5 24 54 24 54s19-19.5 19-33.4C43 10.3 34.5 2 24 2zm0 26a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" class="is-web"/><path transform="translate(480 0)" d="M24 2C13.5 2 5 10.3 5 20.6 5 34.5 24 54 24 54s19-19.5 19-33.4C43 10.3 34.5 2 24 2zm0 26a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" class="is-web"/><path transform="translate(540 0)" d="M24 2C13.5 2 5 10.3 5 20.6 5 34.5 24 54 24 54s19-19.5 19-33.4C43 10.3 34.5 2 24 2zm0 26a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" class="is-web"/></svg></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="servicios" style="--h: 1; --hm: 2" aria-labelledby="servicios-h">
+    <div class="wrap grid">
+      <div class="span-5">
+        <div class="section-head">
+          <h2 id="servicios-h" data-en="Services and prices">Servicios y precios</h2>
+          <p data-en="The check-up is free. The example is a made-up cafe: its Google listing before and after.">El diagnóstico es gratis. El ejemplo es una cafetería inventada: su ficha antes y después.</p>
+        </div>
+        <form class="calc-form" id="calc">
+          <fieldset class="calc">
+            <legend data-en="Tick what you need: the total updates as you go.">Marca lo que necesitas: el total cambia al momento.</legend>
+            <label class="calc__opt"><input type="checkbox" checked disabled>
+              <span class="calc__body"><span class="calc__head"><span class="calc__name" data-en="“How Google sees you” check-up">Diagnóstico «Cómo te ve Google»</span><span class="calc__price" data-en="Free">Gratis</span></span>
+              <p data-en="One page: how you show up on Google Maps, your website on a phone and 3 concrete fixes.">Una página: cómo sales en Google Maps, tu web en el móvil y 3 mejoras concretas.</p></span></label>
+            <label class="calc__opt"><input type="checkbox" name="perfil" value="199" checked>
+              <span class="calc__body"><span class="calc__head"><span class="calc__name" data-en="Google Business Profile, set up right">Perfil de Google bien montado</span><span class="calc__price">$199</span></span>
+              <p data-en="Hours, categories, photos, services, a description in both languages and a guide to asking for reviews.">Horario, categorías, fotos, servicios, descripción en los dos idiomas y una guía para pedir reseñas.</p></span></label>
+            <label class="calc__opt"><input type="checkbox" name="web" value="499" checked>
+              <span class="calc__body"><span class="calc__head"><span class="calc__name" data-en="One-page bilingual website">Web de una página, bilingüe</span><span class="calc__price">$499</span></span>
+              <p data-en="Fast on phones, with a map, your hours and a call or WhatsApp button. The domain, about $12 to $20 a year, is yours.">Rápida en el móvil, con mapa, horario y botón de llamar o de WhatsApp. El dominio, unos $12 a $20 al año, es tuyo.</p></span></label>
+            <label class="field calc__plan"><span data-en="Monthly maintenance (optional)">Mantenimiento cada mes (opcional)</span>
+              <select name="plan">
+                <option value="0" data-en="No monthly plan">Sin plan mensual</option>
+                <option value="39" data-en="Website: $39 a month">Web: $39 al mes</option>
+                <option value="79" data-en="Google profile: $79 a month">Perfil de Google: $79 al mes</option>
+                <option value="99" data-en="Both: $99 a month">Los dos: $99 al mes</option>
+              </select></label>
+          </fieldset>
+          <div class="calc__total" aria-live="polite">
+            <span data-en="Total for the job">Total del encargo</span><strong data-calc="total">$599</strong>
+            <p class="t-small" data-calc="split" data-en="You pay it in two halves: $299.50 to start and $299.50 on delivery ($299.50 + $299.50 = $599). Profile and website together save $99.">Lo pagas en dos mitades: $299.50 al empezar y $299.50 al entregar ($299.50 + $299.50 = $599). Perfil y web juntos te ahorran $99.</p>
+          </div>
+        </form>
+        <p class="t-small calc__note" data-en-html="Launch price: my first 3 clients get 20% off if they let me show their project as an example. <a class='link' href='https://wa.me/18136830387'>Write on WhatsApp</a>">Precio de lanzamiento: los 3 primeros clientes tienen un 20 % de descuento si me dejan enseñar su trabajo como ejemplo. <a class="link" href="https://wa.me/18136830387">Escribir por WhatsApp</a></p>
+      </div>
+      <div class="frame span-6 start-7" role="img" aria-label="Ejemplo con una cafetería inventada, Tres Coladas: su ficha de Google Maps antes, sin horario ni fotos, y después, con horario, tres fotos, descripción en dos idiomas y botones de llamar y cómo llegar" data-en-aria="Example with a made-up cafe, Tres Coladas: its Google Maps listing before, with no hours or photos, and after, with hours, three photos, a description in two languages and call and directions buttons">
+        <div class="ficha">
+          <p class="ficha__tag"><span data-en="Example: a made-up business">Ejemplo: un negocio inventado</span><img src="assets/icons/google-maps.svg" alt="" width="14" height="20" loading="lazy"></p>
+          <div class="ficha__card ficha__card--before">
+            <span class="ficha__when" data-en="Before">Antes</span>
+            <span class="ficha__name">Tres Coladas</span>
+            <span class="ficha__kind" data-en="Cafe">Cafetería</span>
+            <div class="ficha__empty" data-en="No photos">Sin fotos</div>
+            <ul class="ficha__rows">
+              <li><span data-en="Hours">Horario</span><span class="is-missing" data-en="Missing">Falta</span></li>
+              <li><span data-en="Description">Descripción</span><span class="is-missing" data-en="Missing">Falta</span></li>
+              <li><span data-en="Services">Servicios</span><span class="is-missing" data-en="Missing">Faltan</span></li>
+              <li><span data-en="Website">Web</span><span class="is-missing" data-en="None">No tiene</span></li>
+            </ul>
+          </div>
+          <div class="ficha__card ficha__card--after">
+            <span class="ficha__when" data-en="After">Después</span>
+            <span class="ficha__name">Tres Coladas</span>
+            <span class="ficha__kind" data-en="Cuban cafe · West Tampa">Cafetería cubana · West Tampa</span>
+            <div class="ficha__photos">
+              <img src="assets/img/photo-m189498721-160.jpg" srcset="assets/img/photo-m189498721-160.jpg 160w, assets/img/photo-m189498721-500.jpg 500w, assets/img/photo-m189498721-960.jpg 960w" sizes="(max-width: 639px) 340px, (max-width: 1023px) 700px, 70px" alt="" width="500" height="333" loading="lazy" data-source="m189498721" data-subject="coffee tray">
+              <img src="assets/img/photo-f23097605-160.jpg" alt="" width="500" height="331" loading="lazy" data-source="f23097605" data-subject="cuban sandwich">
+              <img src="assets/img/photo-f175183021-160.jpg" alt="" width="500" height="375" loading="lazy" data-source="f175183021" data-subject="croquetas">
+            </div>
+            <ul class="ficha__rows">
+              <li><span data-en="Hours">Horario</span><span data-en="Mon–Fri from 6:00">Lun–vie desde las 6:00</span></li>
+              <li><span data-en="Description">Descripción</span><span data-en="In Spanish and English">En español e inglés</span></li>
+              <li><span data-en="Services">Servicios</span><span data-en="Coffee, pastelitos, sandwiches">Café, pastelitos, sándwiches</span></li>
+            </ul>
+            <div class="ficha__chips"><span data-en="Call">Llamar</span><span data-en="Directions">Cómo llegar</span><span>Web</span></div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ejemplo" style="--h: 1; --hm: 1" aria-labelledby="ejemplo-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="ejemplo-h" data-en="A cafe's website, before and after">La web de una cafetería, antes y después</h2>
+        <p data-en="Tres Coladas is a made-up cafe, built to show how I work. Drag the line: on the left, the kind of page I find every day; on the right, the website I build, in Spanish and English.">Tres Coladas es una cafetería inventada para enseñar cómo trabajo. Arrastra la línea: a la izquierda, el tipo de página que encuentro cada día; a la derecha, la web que hago, en español e inglés.</p>
+      </div>
+      <div class="ba frame frame--photo" data-ba>
+        <div class="ba__layer ba__layer--before" aria-hidden="true">
+          <div class="ba__before">
+            <div class="ba__url"><i></i><i></i><i></i><span>trescoladas.example</span></div>
+            <div class="ba__soon"><b>Coming soon</b><span data-en="Our website is under construction. Check back soon.">Nuestra web está en construcción. Vuelva pronto.</span></div>
+            <div class="ba__foot">© 2020 · Home</div>
+          </div>
+        </div>
+        <div class="ba__layer ba__layer--after">
+          <img src="assets/img/work-cafe-escritorio.jpg" srcset="assets/img/work-cafe-escritorio-720.jpg 720w, assets/img/work-cafe-escritorio.jpg 1440w" sizes="(max-width: 639px) 160vw, 84vw" width="1440" height="900" loading="lazy" alt="La web nueva de la cafetería de ejemplo: una bandeja con cuatro cafés y el título Cafetería cubana en West Tampa" data-en-alt="The sample cafe's new website: a tray of four coffees and the heading Cuban cafe in West Tampa">
+        </div>
+        <span class="ba__line"></span>
+        <span class="ba__knob" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M7 5 2 10l5 5M13 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="ba__tag ba__tag--before" aria-hidden="true" data-en="Before">Antes</span>
+        <span class="ba__tag ba__tag--after" aria-hidden="true" data-en="After">Después</span>
+        <input class="ba__range" type="range" min="0" max="100" value="32" aria-label="Comparar antes y después" data-en-aria="Compare before and after">
+      </div>
+    </div>
+  </section>
+
+  <!-- word-highlight: one statement in its own section, one strong word in <strong> -->
+  <section class="section statement" id="no" style="--h: 1" data-moment="word-highlight" aria-label="Lo que no hago" data-en-aria="What I don't do">
+    <div class="wrap">
+      <p class="t-label" data-en="What I don't do">Lo que no hago</p>
+      <p class="mo-wh__text" data-en-html="I never ask for your passwords, I publish nothing in your name without your OK, I don't promise the top spot on Google and I don't buy reviews. Your listing, your domain and your accounts stay <strong>yours</strong>.">No te pido contraseñas, no publico nada en tu nombre sin que lo apruebes, no prometo el primer puesto en Google y no compro reseñas. Tu ficha, tu dominio y tus cuentas siguen siendo <strong>tuyos</strong>.</p>
+    </div>
+  </section>
+
+  <!-- pinned-chapters: the section is the host, two screens tall; four steps, a title, two lines and one picture each -->
+  <section class="section" id="como" style="--h: 2" data-moment="pinned-chapters" aria-labelledby="como-h">
+    <div class="wrap mo-pc__grid">
+      <div class="mo-pc__text">
+        <h2 id="como-h" data-en="How I work, in 4 steps">Cómo trabajo, en 4 pasos</h2>
+        <ol class="mo-pc__steps">
+          <li class="mo-pc__step">
+            <h3 data-en="I send you the check-up">Te mando el diagnóstico</h3>
+            <p data-en="Free, by WhatsApp or email. I only look at what anyone can see on Google and on your website.">Gratis, por WhatsApp o correo. Miro solo lo que cualquiera ve en Google y en tu web.</p>
+            <figure class="mo-pc__visual mo-pc__visual--lit">
+              <div class="doc" role="img" aria-label="Un diagnóstico de una página para la cafetería de ejemplo: lo que falta en Google Maps y tres mejoras" data-en-aria="A one-page check-up for the sample cafe: what is missing on Google Maps and three fixes">
+                <div class="doc__head"><span data-en="Tres Coladas · Tampa · example">Tres Coladas · Tampa · ejemplo</span><span data-en="1 page">1 página</span></div>
+                <div class="doc__title" data-en="How Google sees you">Cómo te ve Google</div>
+                <ul class="doc__hide-sm">
+                  <li data-en="Google Maps: shows up, no hours, no photos">Google Maps: sale, sin horario y sin fotos</li>
+                  <li data-en="Description in Spanish: none">Descripción en español: no tiene</li>
+                </ul>
+                <div class="doc__line"><strong data-en="3 fixes">3 mejoras</strong></div>
+                <ol>
+                  <li data-en="Add the hours for every day">Poner el horario de cada día</li>
+                  <li data-en="Upload 10 photos of the counter and the food">Subir 10 fotos del mostrador y la comida</li>
+                  <li data-en="Write the description in both languages">Escribir la descripción en los dos idiomas</li>
+                </ol>
+              </div>
+            </figure>
+          </li>
+          <li class="mo-pc__step">
+            <h3 data-en="We sign a short agreement">Firmamos un acuerdo corto</h3>
+            <p data-en="Price, what you get and the timeline, in writing. You pay half up front.">Precio, qué recibes y el plazo, por escrito. Pagas la mitad al empezar.</p>
+            <figure class="mo-pc__visual mo-pc__visual--lit">
+              <div class="doc" role="img" aria-label="Un acuerdo de servicio de ejemplo: perfil y web por 599 dólares, mitad al aceptar y mitad al entregar, con las dos firmas" data-en-aria="A sample service agreement: profile and website for 599 dollars, half on signing and half on delivery, with both signatures">
+                <div class="doc__head"><span data-en="Service agreement · example">Acuerdo de servicio · ejemplo</span></div>
+                <div class="doc__title" data-en="Profile and website together">Perfil y web juntos</div>
+                <div class="doc__line"><span data-en="Total price">Precio total</span><strong>$599</strong></div>
+                <div class="doc__line"><span data-en="Half on signing">Mitad al aceptar</span><span>$299.50</span></div>
+                <div class="doc__line"><span data-en="Other half on delivery">Otra mitad al entregar</span><span>$299.50</span></div>
+                <div class="doc__sign"><span data-en="Client">Cliente</span><span>Jaime</span></div>
+              </div>
+            </figure>
+          </li>
+          <li class="mo-pc__step">
+            <h3 data-en="You send me your details and photos">Me mandas datos y fotos</h3>
+            <p data-en="Hours, services, 5 to 15 photos and your logo if you have one. You add me as a manager of your listing.">Horario, servicios, de 5 a 15 fotos y tu logo si lo tienes. Me añades como gestor de tu ficha.</p>
+            <figure class="mo-pc__visual"><img src="assets/img/photo-f51439363-960.jpg" srcset="assets/img/photo-f51439363-500.jpg 500w, assets/img/photo-f51439363-960.jpg 960w" sizes="(min-width: 1024px) 44vw, 100vw" width="960" height="640" loading="lazy" alt="Unas manos con un móvil y un café para llevar" data-en-alt="Hands holding a phone and a coffee to go" data-source="f51439363" data-subject="phone in hand"></figure>
+          </li>
+          <li class="mo-pc__step">
+            <h3 data-en="I get it done">Lo dejo listo</h3>
+            <p data-en="You review it, ask for changes (2 rounds included) and pay the rest on delivery.">Lo revisas, pides cambios (2 rondas incluidas) y pagas el resto al entregar.</p>
+            <figure class="mo-pc__visual"><img src="assets/img/photo-f51439776-960.jpg" srcset="assets/img/photo-f51439776-500.jpg 500w, assets/img/photo-f51439776-960.jpg 960w" sizes="(min-width: 1024px) 44vw, 100vw" width="960" height="640" loading="lazy" alt="Un portátil, una libreta y notas de colores sobre una mesa de madera" data-en-alt="A laptop, a notebook and coloured notes on a wooden desk" data-source="f51439776" data-subject="laptop desk"></figure>
+          </li>
+        </ol>
+      </div>
+      <div class="mo-pc__visuals frame"></div>
+    </div>
+  </section>
+
+  <section class="section" id="mensual" style="--h: 1; --hm: 2" aria-labelledby="mensual-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="mensual-h" data-en="Monthly maintenance">Mantenimiento cada mes</h2>
+        <p data-en="Every plan comes with a monthly report of visits and calls. You pay each month in advance and cancel by telling me 7 days ahead.">Cada plan trae un informe al mes de visitas y llamadas. Se paga por adelantado cada mes y se cancela avisando 7 días antes.</p>
+      </div>
+      <div class="grid">
+        <ul class="rows span-6">
+          <li><span class="rows__name" data-en="Website">Web</span><span class="rows__value" data-en="$39 a month">$39 al mes</span>
+            <p data-en="Small changes to your website.">Cambios pequeños en la web.</p></li>
+          <li><span class="rows__name" data-en="Google profile">Perfil de Google</span><span class="rows__value" data-en="$79 a month">$79 al mes</span>
+            <p data-en="4 posts a month that you approve, and your hours always current.">4 publicaciones al mes que tú apruebas y el horario siempre al día.</p></li>
+          <li><span class="rows__name" data-en="Website and profile">Web y perfil</span><span class="rows__value" data-en="$99 a month">$99 al mes</span>
+            <p data-en="Both plans together: you save $19 a month.">Los dos planes juntos: te ahorras $19 al mes.</p></li>
+          <li><span class="rows__name" data-en="Website check-up">Revisión de tu web</span><span class="rows__value" data-en="$49, one-time">$49, pago único</span>
+            <p data-en="Speed, phones and basic security, checked from the outside and only with your written permission.">Velocidad, móvil y seguridad básica, mirada desde fuera y solo con tu permiso por escrito.</p></li>
+        </ul>
+        <div class="frame span-6 start-7" role="img" aria-label="Ejemplo de una de las publicaciones del mes para la cafetería inventada: una foto de cafecitos y el texto de la colada de la mañana, con los botones aprobar y pedir cambio" data-en-aria="Sample monthly post for the made-up cafe: a photo of small Cuban coffees and the text about the morning colada, with approve and ask for a change buttons">
+          <div class="post">
+            <p class="ficha__tag"><span data-en="Post to approve · example">Publicación para aprobar · ejemplo</span><img src="assets/icons/google-maps.svg" alt="" width="14" height="20" loading="lazy"></p>
+            <div class="post__media"><img class="post__img" src="assets/img/photo-f179722180-500.jpg" srcset="assets/img/photo-f179722180-500.jpg 500w, assets/img/photo-f179722180-960.jpg 960w" sizes="(max-width: 639px) 90vw, 320px" width="960" height="720" loading="lazy" alt="" data-source="f179722180" data-subject="cafecito"></div>
+            <span class="ficha__name">Tres Coladas</span>
+            <p class="post__text" data-en="Coffee for the office: coladas to share, at the window from 6:00.">Café para la oficina: coladas para compartir en la ventanita, desde las 6:00.</p>
+            <div class="ficha__chips"><span data-en="Approve">Aprobar</span><span data-en="Ask for a change">Pedir un cambio</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer closing footer--dark ground-inverse g2m" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--type">
+      <div class="section-head">
+        <h2 id="close-h" data-en="Ask for your free check-up">Pide tu diagnóstico gratis</h2>
+        <p data-en-html="Write your business's name and I'll look at it on Google today. Or call (813) 683-0387, or email <span class='nowrap'>tanatosai2011@gmail.com</span>.">Escribe el nombre de tu negocio y hoy mismo lo miro en Google. También puedes llamar al (813) 683-0387 o escribir a <span class="nowrap">tanatosai2011@gmail.com</span>.</p>
+      </div>
+      <form class="ask" id="ask" action="https://wa.me/18136830387" method="get" target="_blank" rel="noopener noreferrer">
+        <label class="field"><span data-en="Your business's name">Nombre de tu negocio</span>
+          <input type="text" name="text" autocomplete="organization" required maxlength="120" placeholder="Ej.: Cafetería Tres Coladas…" data-en-placeholder="E.g. Tres Coladas Cafe…" aria-describedby="ask-err">
+          <span class="field__error" id="ask-err" hidden data-en="Write your business's name first.">Escribe primero el nombre de tu negocio.</span></label>
+        <button class="btn btn--primary" type="submit" data-ask="wa" data-en="Send by WhatsApp">Pedir por WhatsApp</button>
+        <p class="ask__note" data-en-html="It opens WhatsApp with the message already written; nothing is sent until you press Send. Prefer email? <a class='link' href='mailto:tanatosai2011@gmail.com' data-ask-mail>Ask by email</a>.">Se abre WhatsApp con el mensaje ya escrito; no se envía nada hasta que tú le das a Enviar. ¿Prefieres correo? <a class="link" href="mailto:tanatosai2011@gmail.com" data-ask-mail>Pídelo por correo</a>.</p>
+      </form>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-4 stack-4">
+          <a class="nav__logo" href="#top"><span class="mark" data-mark="dots" aria-hidden="true"></span><span translate="no">Tánatos Webs</span></a>
+          <p class="footer__lede" data-en="Google listings and bilingual websites, from Tampa.">Fichas de Google y webs bilingües, desde Tampa.</p>
+        </div>
+        <div class="span-2 footer__col"><h3 data-en="Services">Servicios</h3><ul><li><a href="#servicios" data-en="Services and prices">Servicios y precios</a></li></ul></div>
+        <div class="span-2 footer__col"><h3 data-en="Examples">Ejemplos</h3><ul><li><a href="#ejemplo" data-en="Sample website">Web de ejemplo</a></li></ul></div>
+        <div class="span-2 footer__col"><h3 data-en="Process">Proceso</h3><ul><li><a href="#como" data-en="How I work">Cómo trabajo</a></li><li><a href="#no" data-en="What I don't do">Lo que no hago</a></li></ul></div>
+        <div class="span-2 footer__col"><h3 data-en="Maintenance">Mantenimiento</h3><ul><li><a href="#mensual" data-en="Monthly plans">Planes al mes</a></li><li><a href="mailto:tanatosai2011@gmail.com" data-en="Send an email">Escribir un correo</a></li></ul></div>
+      </div>
+      <div class="footer__legal">
+        <span data-en="© 2026 Tánatos Webs · Tampa, FL · Prices in USD, before tax">© 2026 Tánatos Webs · Tampa, FL · Precios en dólares, sin impuestos</span>
+        <div class="socials"></div>
+        <a class="credits" href="credits.html" data-en="Photographs via Wikimedia Commons">Fotos vía Wikimedia Commons</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Acciones rápidas" data-en-aria="Quick actions">
+  <a class="btn btn--primary" href="https://wa.me/18136830387?text=Hola%20Jaime%2C%20quiero%20el%20diagn%C3%B3stico%20gratis%20de%20mi%20negocio." data-en-href="https://wa.me/18136830387?text=Hi%20Jaime%2C%20I%27d%20like%20the%20free%20check-up%20for%20my%20business." data-en="Get a free check-up">Pedir diagnóstico gratis</a>
+</nav>
+
+<!-- the language switch: Spanish is in the page; English comes from the data-en attributes. It runs before the kit's
+     modules, so the moments mount on the words the visitor reads; a switch reloads the page with ?lang=. -->
+<script>
+(function () {
+  var d = document, h = d.documentElement, lang = 'es';
+  try { if (new URLSearchParams(location.search).get('lang') === 'en') lang = 'en'; } catch (e) {}
+  function each(sel, fn) { Array.prototype.forEach.call(d.querySelectorAll(sel), fn); }
+  if (lang === 'en') {
+    h.lang = 'en';
+    d.title = h.getAttribute('data-en-title');
+    var m = d.querySelector('meta[name="description"]'); if (m) m.content = h.getAttribute('data-en-description');
+    each('[data-en]', function (el) { el.textContent = el.getAttribute('data-en'); });
+    each('[data-en-html]', function (el) { el.innerHTML = el.getAttribute('data-en-html'); });
+    each('[data-en-alt]', function (el) { el.alt = el.getAttribute('data-en-alt'); });
+    each('[data-en-aria]', function (el) { el.setAttribute('aria-label', el.getAttribute('data-en-aria')); });
+    each('[data-en-href]', function (el) { el.href = el.getAttribute('data-en-href'); });
+    each('[data-en-placeholder]', function (el) { el.placeholder = el.getAttribute('data-en-placeholder'); });
+  }
+  each('[data-lang-toggle]', function (b) {
+    var next = lang === 'en' ? 'es' : 'en';
+    b.textContent = next === 'en' ? 'English' : 'Español';
+    b.lang = next; b.hreflang = next;
+    b.href = '?lang=' + next;
+  });
+})();
+</script>
+<!-- v3: the hero phone, the calculator, the before/after handle and the check-up request -->
+<script>
+(function () {
+  var d = document, en = d.documentElement.lang === 'en';
+  var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* the phone: plays once (search, tap Website, warning, fixed site) and rests on the fixed site */
+  var demo = d.querySelector('.demo');
+  if (demo) {
+    var tabs = demo.querySelectorAll('[data-show]'), timers = [];
+    var show = function (n) {
+      demo.setAttribute('data-scene', String(n));
+      Array.prototype.forEach.call(tabs, function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-show') === String(n))); });
+    };
+    var clear = function () { timers.forEach(clearTimeout); timers = []; demo.classList.remove('is-tapping'); };
+    var play = function () {
+      clear(); show(1);
+      timers.push(setTimeout(function () { demo.classList.add('is-tapping'); }, 1300));
+      timers.push(setTimeout(function () { show(2); demo.classList.remove('is-tapping'); }, 2000));
+      timers.push(setTimeout(function () { show(3); }, 4200));
+    };
+    Array.prototype.forEach.call(tabs, function (b) {
+      b.addEventListener('click', function () {
+        var n = Number(b.getAttribute('data-show'));
+        if (n === 2 && !calm) { play(); return; }
+        clear(); show(n);
+      });
+    });
+    if (calm) show(3); else setTimeout(play, 600);
+  }
+
+  /* the calculator */
+  var form = d.getElementById('calc');
+  if (form) {
+    var money = function (n) { return '$' + (Number.isInteger(n) ? n : n.toFixed(2)); };
+    var out = form.querySelector('[data-calc="total"]'), split = form.querySelector('[data-calc="split"]');
+    var update = function () {
+      var p = form.perfil.checked, w = form.web.checked, plan = Number(form.plan.value);
+      var total = (p ? 199 : 0) + (w ? 499 : 0) - (p && w ? 99 : 0);
+      out.textContent = money(total);
+      var parts = [];
+      if (total > 0) parts.push(en ? 'You pay it in two halves: ' + money(total / 2) + ' to start and ' + money(total / 2) + ' on delivery (' + money(total / 2) + ' + ' + money(total / 2) + ' = ' + money(total) + ').'
+                                    : 'Lo pagas en dos mitades: ' + money(total / 2) + ' al empezar y ' + money(total / 2) + ' al entregar (' + money(total / 2) + ' + ' + money(total / 2) + ' = ' + money(total) + ').');
+      else parts.push(en ? 'The check-up is free and comes with no commitment.' : 'El diagnóstico es gratis y sin compromiso.');
+      if (p && w) parts.push(en ? 'Profile and website together save $99.' : 'Perfil y web juntos te ahorran $99.');
+      if (plan) parts.push(en ? 'Then ' + money(plan) + ' a month, paid in advance.' : 'Después, ' + money(plan) + ' al mes, por adelantado.');
+      split.textContent = parts.join(' ');
+    };
+    form.addEventListener('change', update); form.addEventListener('submit', function (e) { e.preventDefault(); }); update();
+  }
+
+  /* before / after */
+  Array.prototype.forEach.call(d.querySelectorAll('[data-ba]'), function (ba) {
+    var r = ba.querySelector('.ba__range');
+    var set = function () { ba.style.setProperty('--pos', r.value + '%'); r.setAttribute('aria-valuetext', r.value + (en ? '% after' : ' % después')); };
+    r.addEventListener('input', set); set();
+  });
+
+  /* the check-up request: WhatsApp or email, with the message written */
+  var ask = d.getElementById('ask');
+  if (ask) {
+    ask.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var field = ask.elements.text, err = d.getElementById('ask-err');
+      var name = field.value.trim();
+      if (!name) { field.setAttribute('aria-invalid', 'true'); if (err) err.hidden = false; field.focus(); return; }
+      field.removeAttribute('aria-invalid'); if (err) err.hidden = true;
+      var via = e.submitter && e.submitter.getAttribute('data-ask');
+      var msg = en ? 'Hi Jaime, I’d like the free check-up for my business: ' + name + '.'
+                   : 'Hola Jaime, quiero el diagnóstico gratis de mi negocio: ' + name + '.';
+      var url = via === 'mail'
+        ? 'mailto:tanatosai2011@gmail.com?subject=' + encodeURIComponent(en ? 'Free check-up: ' + name : 'Diagnóstico gratis: ' + name) + '&body=' + encodeURIComponent(msg)
+        : 'https://wa.me/18136830387?text=' + encodeURIComponent(msg);
+      if (via === 'mail') location.href = url; else window.open(url, '_blank', 'noopener');
+    });
+    var mail = ask.querySelector('[data-ask-mail]');
+    if (mail) mail.addEventListener('click', function (e) {
+      var name = ask.elements.text.value.trim(); if (!name) return; /* sin nombre: correo en blanco, como un enlace normal */
+      e.preventDefault();
+      var msg = en ? 'Hi Jaime, I’d like the free check-up for my business: ' + name + '.' : 'Hola Jaime, quiero el diagnóstico gratis de mi negocio: ' + name + '.';
+      location.href = 'mailto:tanatosai2011@gmail.com?subject=' + encodeURIComponent(en ? 'Free check-up: ' + name : 'Diagnóstico gratis: ' + name) + '&body=' + encodeURIComponent(msg);
+    });
+  }
+})();
+</script>
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+</body>
+</html>
